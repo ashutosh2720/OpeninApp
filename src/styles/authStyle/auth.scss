@@ -1,0 +1,219 @@
+* {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+.left_side_image {
+  width: 50vw;
+  height: 100vh;
+}
+
+.ellipse_logo {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 5vw;
+  height: 5vw;
+}
+
+.base_text {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  font-size: 5vw;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.social_logo {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  left: 13%;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+
+.account_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-left: 5rem;
+
+  .sign_in_text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &:first-child {
+      font-family: Montserrat;
+      font-size: 2vw;
+      font-weight: 700;
+    }
+
+    &:nth-child(2) {
+      font-family: Lato;
+      font-size: 1.1vw;
+    }
+  }
+
+  .login_icon {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .google_container,
+  .apple_container {
+    width: 14vw;
+    height: 2vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+
+    .google_icon,
+    .apple_icon {
+      font-size: 1.3vw;
+      color: #858585;
+    }
+
+    .google_text,
+    .apple_text {
+      font-size: 1.1vw;
+      color: #858585;
+      font-weight: 400;
+    }
+  }
+
+  .do_not_account {
+    text-align: center;
+    font-family: Lato;
+    font-size: 13px;
+
+    span {
+      color: #605bff;
+    }
+  }
+}
+
+.navbar {
+  display: none;
+  width: 100vw;
+  height: 10vw;
+  background-color: #605bff;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .left_side_image {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+    width: 100vw;
+    height: 15vw;
+    background-color: #605bff;
+  }
+
+  .account_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-left: 7px;
+
+    .sign_in_text_container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-left: 1rem;
+
+      &:first-child {
+        font-family: Montserrat;
+        font-size: 5vw;
+        font-weight: 700;
+      }
+
+      &:nth-child(2) {
+        font-family: Lato;
+        font-size: 2vw;
+      }
+    }
+
+    .login_icon {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .google_container,
+    .apple_container {
+      width: 45vw;
+      height: 5vw;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      border-radius: 10px;
+
+      .google_icon,
+      .apple_icon {
+        font-size: 5vw;
+      }
+
+      .google_text,
+      .apple_text {
+        font-size: 3vw;
+        color: #858585;
+        font-weight: 400;
+      }
+    }
+
+    .do_not_account {
+      text-align: center;
+      font-family: Lato;
+      font-size: 13px;
+
+      span {
+        color: #605bff;
+      }
+    }
+  }
+
+  .ellipse_logo {
+    top: 2%;
+    left: 5%;
+    width: 8vw;
+    height: 8vw;
+    display: block;
+  }
+
+  .base_text {
+    top: 2.5%;
+    left: 16%;
+    font-size: 6vw;
+    font-weight: 200;
+  }
+
+  .social_logo {
+    color: rgb(184, 180, 180);
+    left: 25%;
+    font-size: 7vw;
+    bottom: 8%;
+  }
+}

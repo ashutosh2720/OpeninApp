@@ -1,0 +1,49 @@
+.sidebar_container {
+  width: 20vw;
+  height: 100vh;
+  background-color: #fff;
+  display: block;
+}
+
+.logo_base_text_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.6rem;
+  :nth-child(2) {
+    font-size: 1.5vw;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+img {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  opacity: 0.5;
+  gap: 2rem;
+  :first-child {
+    font-size: 1.8vw;
+  }
+  :nth-child(2) {
+    font-size: 1.1vw;
+    font-weight: 600;
+  }
+}
+
+.icon_title_container {
+  display: flex;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  .sidebar_container {
+    display: none;
+  }
+}
