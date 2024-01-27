@@ -4,10 +4,12 @@
   align-items: center;
   margin-left: -0.1rem;
 }
+
 .without_file_input_file_container {
   margin-left: 7.9rem;
   margin-top: -13rem;
 }
+
 .upload_file_form {
   background-color: #fff;
   height: 35vh;
@@ -17,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   label {
     border: 2px dotted lightgray;
     display: flex;
@@ -28,22 +31,27 @@
     align-items: center;
   }
 }
+
 #browse {
   color: blue;
   cursor: pointer;
 }
+
 input[type="file"] {
   display: none;
 }
+
 .file_type {
   color: lightgrey;
 }
+
 .remove_button {
   color: red;
   text-align: center;
   cursor: pointer;
   margin-top: 1rem;
 }
+
 button[type="submit"] {
   background-color: #605bff;
   border: 1px solid #605bff;
@@ -55,29 +63,33 @@ button[type="submit"] {
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
-  cursor: pointer;
+
   :first-child {
     font-size: 1.3rem;
   }
+
   :nth-child(2) {
     font-size: 0.8rem;
   }
 }
+
 button[type="submit"]:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
 .uploaded_icon_text_container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
+
 #spinner {
   height: 1.2rem;
   width: 1.2rem;
 }
-// *********************************************{
+
 .uploaded_file_map_data_container {
   display: flex;
   flex-direction: column;
@@ -85,14 +97,12 @@ button[type="submit"]:disabled {
   gap: 1em;
   margin-top: 4rem;
 }
+
 #upload_heading_text {
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-::-webkit-scrollbar {
-  width: 50%;
-}
 #map_data_heading {
   display: flex;
   justify-content: space-around;
@@ -100,9 +110,11 @@ button[type="submit"]:disabled {
   font-size: 0.7rem;
   font-weight: 600;
 }
+
 .uploaded_file_link {
   width: 6rem;
 }
+
 .mapping_file_container {
   overflow: auto;
   white-space: nowrap;
@@ -114,6 +126,7 @@ button[type="submit"]:disabled {
   position: relative;
   opacity: 0.7;
 }
+
 .map_uploaded_file_container {
   border: 1px solid transparent;
   overflow-x: auto;
@@ -123,6 +136,7 @@ button[type="submit"]:disabled {
   left: 0;
   width: 100%;
 }
+
 .file_link_tag_container {
   display: flex;
   margin: 0.7rem;
@@ -132,10 +146,12 @@ button[type="submit"]:disabled {
   align-items: center;
   background-color: white;
 }
+
 .remove_tag_button {
   margin-left: 5px;
   cursor: pointer;
 }
+
 .drop_down {
   outline: none;
   border: 1px solid lightgray;
@@ -145,6 +161,7 @@ button[type="submit"]:disabled {
   text-align: center;
   border-radius: 5px;
 }
+
 #selected_tag_design {
   background-color: #605bff;
   color: white;
@@ -154,15 +171,17 @@ button[type="submit"]:disabled {
   text-align: center;
   border-radius: 3px;
 }
-// ***************************************
+
 @media only screen and (max-width: 767px) {
   .upload_file_form {
     width: 80vw;
     margin-top: 6rem;
+
     label {
       width: 80vw;
     }
   }
+
   .excel_icon {
     height: 1.5rem;
     width: 1.5rem;
@@ -171,6 +190,7 @@ button[type="submit"]:disabled {
   .map_uploaded_file_container {
     overflow-x: auto;
   }
+
   .without_file_input_file_container {
     margin-left: 0rem;
     margin-top: 0rem;

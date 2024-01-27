@@ -42,7 +42,8 @@ const SignIn = () => {
             name="email"
             value={signInData.email}
             onChange={inputHandler}
-            placeholder="Email"
+           
+            placeholder='jondoe@gmail.com'
           />
           <label htmlFor="password">Password</label>
           <input
@@ -50,7 +51,7 @@ const SignIn = () => {
             name="password"
             value={signInData.password}
             onChange={inputHandler}
-            placeholder="Password"
+            placeholder="**********"
           />
           <p>Forgot password</p>
           <input type="submit" value="Sign In" />
