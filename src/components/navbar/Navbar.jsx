@@ -49,8 +49,10 @@ const Navbar = () => {
 
       <div className="navbar_container">
         <div id="responsive_navbar">
+          <div className="hamburger">
           <RxHamburgerMenu onClick={openDrawer} />
-          <img src={dashboardLogo} alt="dashboardLogo" />
+          </div>
+          <img src={dashboardLogo} className="dashboardLogo" alt="dashboardLogo" />
           <div>Base</div>
         </div>
         <span className="first_element">Upload CSV</span>

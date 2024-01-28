@@ -68,6 +68,7 @@
   display: none;
 }
 .icons {
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -76,14 +77,17 @@
 }
 .profile {
   border-radius: 50%;
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 @media screen and (max-width: 769px) {
   .profile {
     display: block;
   }
+  
+
+ 
   .navbar_container {
     span {
       position: absolute;
@@ -92,7 +96,7 @@
   }
   #responsive_navbar {
     width: 100vw;
-    height: 15vh;
+    height: 13vh;
     background-color: #fff;
     display: block;
     position: absolute;
@@ -105,9 +109,20 @@
     :first-child {
       cursor: pointer;
     }
+
+    
+  }
+
+  #responsive_navbar img{
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   #slider {
     display: block;
   }
+  .hamburger{
+    font: 3.5rem;
+  }
+  
 }
