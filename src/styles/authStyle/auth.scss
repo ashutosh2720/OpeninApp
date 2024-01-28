@@ -1,3 +1,14 @@
+$primary-color: #605bff;
+$secondary-color: #fff;
+$text-color: #858585;
+$accent-color: #605bff;
+
+$google-container-bg: $secondary-color;
+$apple-container-bg: $secondary-color;
+$do-not-account-color: $primary-color;
+$ellipse-logo-bg: $primary-color;
+$social-logo-color: $accent-color;
+
 * {
   overflow: hidden;
 }
@@ -17,6 +28,7 @@
   left: 3%;
   width: 5vw;
   height: 5vw;
+  background-color: $ellipse-logo-bg;
 }
 
 .base_text {
@@ -24,7 +36,7 @@
   top: 45%;
   left: 15%;
   font-size: 5vw;
-  color: #fff;
+  color: $secondary-color;
   font-family: Montserrat;
   font-weight: 700;
 }
@@ -32,7 +44,7 @@
 .social_logo {
   position: absolute;
   bottom: 10%;
-  color: white;
+  color: $secondary-color;
   left: 13%;
   display: flex;
   gap: 2rem;
@@ -51,16 +63,18 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: black;
 
     &:first-child {
-      font-family: Montserrat;
-      font-size: 2vw;
-      font-weight: 700;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: gray;
     }
 
     &:nth-child(2) {
       font-family: Lato;
       font-size: 1.1vw;
+      color: $text-color;
     }
   }
 
@@ -73,7 +87,7 @@
   .apple_container {
     width: 14vw;
     height: 2vw;
-    background-color: white;
+    background-color: $secondary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,13 +97,13 @@
     .google_icon,
     .apple_icon {
       font-size: 1.3vw;
-      color: #858585;
+      color: $text-color;
     }
 
     .google_text,
     .apple_text {
       font-size: 1.1vw;
-      color: #858585;
+      color: $text-color;
       font-weight: 400;
     }
   }
@@ -97,10 +111,10 @@
   .do_not_account {
     text-align: center;
     font-family: Lato;
-    font-size: 13px;
+    font-size: 1.1rem;
 
     span {
-      color: #605bff;
+      color: $do-not-account-color;
     }
   }
 }
@@ -109,7 +123,7 @@
   display: none;
   width: 100vw;
   height: 10vw;
-  background-color: #605bff;
+  background-color: $primary-color;
 }
 
 @media screen and (max-width: 600px) {
@@ -127,7 +141,7 @@
     display: block;
     width: 100vw;
     height: 15vw;
-    background-color: #605bff;
+    background-color: $primary-color;
   }
 
   .account_container {
@@ -142,16 +156,17 @@
       flex-direction: column;
       gap: 5px;
       margin-left: 1rem;
+      color: black;
 
       &:first-child {
         font-family: Montserrat;
-        font-size: 5vw;
-        font-weight: 700;
+        color: gray;
       }
 
       &:nth-child(2) {
         font-family: Lato;
         font-size: 2vw;
+        color: $text-color;
       }
     }
 
@@ -164,7 +179,7 @@
     .apple_container {
       width: 45vw;
       height: 5vw;
-      background-color: white;
+      background-color: $secondary-color;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -174,12 +189,13 @@
       .google_icon,
       .apple_icon {
         font-size: 5vw;
+        color: $text-color;
       }
 
       .google_text,
       .apple_text {
         font-size: 3vw;
-        color: #858585;
+        color: $text-color;
         font-weight: 400;
       }
     }
@@ -187,10 +203,9 @@
     .do_not_account {
       text-align: center;
       font-family: Lato;
-      font-size: 13px;
 
       span {
-        color: #605bff;
+        color: $do-not-account-color;
       }
     }
   }
@@ -201,6 +216,7 @@
     width: 8vw;
     height: 8vw;
     display: block;
+    background-color: $ellipse-logo-bg;
   }
 
   .base_text {
